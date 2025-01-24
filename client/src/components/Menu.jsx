@@ -13,7 +13,7 @@ import LightModeRoundedIcon from '@mui/icons-material/LightModeRounded';
 import DarkModeRoundedIcon from '@mui/icons-material/DarkModeRounded';
 import ExitToAppRoundedIcon from '@mui/icons-material/ExitToAppRounded';
 import CloseRounded from '@mui/icons-material/CloseRounded';
-import LogoIcon from '../Images/Logo.png'
+import LogoIcon from '../Images/ere.webp'
 import { openSignin } from '../redux/setSigninSlice';
 
 const MenuContainer = styled.div`
@@ -101,7 +101,7 @@ const Menu = ({ setMenuOpen, darkMode, setDarkMode, setUploadOpen }) => {
                 <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
                     <Logo>
                         <Image src={LogoIcon} />
-                        PODSTREAM
+                        Xabibulloh_web
                     </Logo>
                 </Link>
                 <Close>
@@ -111,13 +111,13 @@ const Menu = ({ setMenuOpen, darkMode, setDarkMode, setUploadOpen }) => {
             <Link to='/' style={{ textDecoration: "none", color: "inherit", width: '100%' }}>
                 <Elements>
                     <HomeRoundedIcon />
-                    <NavText>Dashboard</NavText>
+                    <NavText>Asosiy sahifa</NavText>
                 </Elements>
             </Link>
             <Link to='/search' style={{ textDecoration: "none", color: "inherit", width: '100%' }}>
                 <Elements>
                     <SearchRoundedIcon />
-                    <NavText>Search</NavText>
+                    <NavText>Qidiruv</NavText>
                 </Elements>
             </Link>
             {
@@ -125,7 +125,7 @@ const Menu = ({ setMenuOpen, darkMode, setDarkMode, setUploadOpen }) => {
                     <Link to='/favourites' style={{ textDecoration: "none", color: "inherit", width: '100%' }}>
                         <Elements>
                             <FavoriteRoundedIcon />
-                            <NavText>Favourites</NavText>
+                            <NavText>Istaklarim</NavText>
                         </Elements>
                     </Link >
                     :
@@ -136,7 +136,7 @@ const Menu = ({ setMenuOpen, darkMode, setDarkMode, setUploadOpen }) => {
                     } style={{ textDecoration: "none", color: "inherit", width: '100%' }}>
                         <Elements>
                             <FavoriteRoundedIcon />
-                            <NavText>Favourites</NavText>
+                            <NavText>Istaklarim</NavText>
                         </Elements>
                     </Link >
             }
@@ -152,7 +152,7 @@ const Menu = ({ setMenuOpen, darkMode, setDarkMode, setUploadOpen }) => {
             }} style={{ textDecoration: "none", color: "inherit", width: '100%' }}>
                 <Elements>
                     <BackupRoundedIcon />
-                    <NavText>Upload</NavText>
+                    <NavText>Yuklamalar</NavText>
                 </Elements>
             </Link>
 
@@ -177,13 +177,13 @@ const Menu = ({ setMenuOpen, darkMode, setDarkMode, setUploadOpen }) => {
                 currentUser ?
                     <Elements onClick={() => logoutUser()}>
                         <ExitToAppRoundedIcon />
-                        <NavText>Log Out</NavText>
+                        <NavText>Chiqish</NavText>
                     </Elements>
 
                     :
                     <Elements onClick={() => dispatch(openSignin())}>
                         <ExitToAppRoundedIcon />
-                        <NavText>Log In</NavText>
+                        <NavText>Kirish</NavText>
                     </Elements>
             }
 

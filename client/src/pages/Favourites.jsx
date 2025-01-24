@@ -83,7 +83,7 @@ const Favourites = () => {
   return (
     <Container>
       <Topic>
-        Favourites
+        Sevimli Videolar
       </Topic>
       {Loading ?
         <Loader>
@@ -91,7 +91,7 @@ const Favourites = () => {
         </Loader>
         :
         <FavouritesContainer>
-          {user?.favorits?.length === 0 && <DisplayNo>No Favourites</DisplayNo>}
+          {user?.favorits?.length === 0 && <DisplayNo>Sevimli darsliklar mavjud emas...</DisplayNo>}
           {user && user?.favorits.map((podcast) => (
             <PodcastCard podcast={podcast} user={user} />
           ))}

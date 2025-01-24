@@ -452,7 +452,7 @@ import {
                   ) : (
                     <>
                       <GoogleIcon src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/1000px-Google_%22G%22_Logo.svg.png?20210618182606" />
-                      Sign In with Google</>
+                      Google orqali kirish</>
                   )}
                 </OutlinedBox>
                 <Divider>
@@ -511,7 +511,7 @@ import {
                 </OutlinedBox>
               </>
               <LoginText>
-                Don't have an account ?
+                Hali yangimisiz?
                 <Span
                   onClick={() => {
                     setSignUpOpen(true);
@@ -527,7 +527,7 @@ import {
                     cursor: "pointer",
                   }}
                 >
-                  Create Account
+                  Account yaratish
                 </Span>
               </LoginText>
             </Wrapper>
@@ -610,7 +610,7 @@ import {
                         )}
                       </OutlinedBox>
                       <LoginText>
-                        Don't have an account ?
+                        Accountingiz yo'qmi?
                         <Span
                           onClick={() => {
                             setSignUpOpen(true);
@@ -624,7 +624,7 @@ import {
                             cursor: "pointer",
                           }}
                         >
-                          Create Account
+                          Account yaratish
                         </Span>
                       </LoginText>
                     </>

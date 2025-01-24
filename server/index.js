@@ -54,8 +54,8 @@ app.use(express.json())
 app.use("/api/auth", authRoutes)
 app.use("/api/podcasts", podcastsRoutes)
 app.use("/api/user", userRoutes)
-// app.use("/api/project", projectRoutes)
-// app.use("/api/team", teamRoutes)
+//  app.use("/api/project", projectRoutes)
+//  app.use("/api/team", teamRoutes)
 
 app.use((err, req, res, next) => {
     const status = err.status || 500;
@@ -68,6 +68,7 @@ app.use((err, req, res, next) => {
 })
 
 app.listen(port, () => {
-    console.log("Connected")
-    connect();
+    console.log("Connected on port")
+    
 })
+connect();

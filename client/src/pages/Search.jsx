@@ -137,7 +137,7 @@ const Search = () => {
             </div>
             {searched === "" ?
                 <Categories>
-                    <Heading>Browse All</Heading>
+                    <Heading>Barchasi</Heading>
                     <BrowseAll>
                         {Category.map((category) => (
                             <Link to={`/showpodcasts/${category.name.toLowerCase()}`} style={{ textDecoration: "none" }}>
@@ -155,7 +155,7 @@ const Search = () => {
                         :
                         <SearchedCards>
                             {searchedPodcasts.length === 0 ?
-                                <DisplayNo>No Podcasts Found</DisplayNo>
+                                <DisplayNo>Podcast topilmadi</DisplayNo>
                                 :
                                 <>
                                     <TopResult podcast={searchedPodcasts[0]} />

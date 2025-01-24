@@ -150,7 +150,7 @@ const Profile = () => {
             </UserDetails>
             {currentUser && user?.podcasts.length > 0 &&
                 <FilterContainer box={true}>
-                    <Topic>Your Uploads
+                    <Topic>Yuklamalarim
                     </Topic>
                     <Podcasts>
                         {user?.podcasts.map((podcast) => (
@@ -162,15 +162,15 @@ const Profile = () => {
             }
             {currentUser && user?.podcasts.length === 0 &&
                 <FilterContainer box={true} >
-                    <Topic>Your Uploads
+                    <Topic>Sizni yuklamalar
                     </Topic>
                     <Container>
-                        <ButtonContainer>Upload</ButtonContainer>
+                        <ButtonContainer>Yuklash</ButtonContainer>
                     </Container>
                 </FilterContainer>
             }
             <FilterContainer box={true}>
-                <Topic>Your Favourites
+                <Topic>Sevimli videolaringiz
                 </Topic>
                 <Podcasts>
                     {user && user?.favorits.map((podcast) => (

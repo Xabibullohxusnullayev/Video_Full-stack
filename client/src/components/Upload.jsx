@@ -285,7 +285,7 @@ const Upload = ({ setUploadOpen }) => {
             dispatch(
                 openSnackbar({
                     open: true,
-                    message: "Podcast created successfully",
+                    message: "Podcast muvaffaqiyatli yaratildi",
                     severity: "success",
                 })
             )
@@ -298,7 +298,7 @@ const Upload = ({ setUploadOpen }) => {
             dispatch(
                 openSnackbar({
                     open: true,
-                    message: "Error creating podcast",
+                    message: "OOPS... yaratilmadi!",
                     severity: "error",
                 })
             )
@@ -327,10 +327,10 @@ const Upload = ({ setUploadOpen }) => {
                         }}
                         onClick={() => setUploadOpen(false)}
                     />
-                    <Title>Upload Podcast</Title>
+                    <Title>Podcast yuklash</Title>
                     {!showEpisode ? (
                         <>
-                            <Label>Podcast Details:</Label>
+                            <Label>Podcast detallari:</Label>
 
                             <ImageSelector podcast={podcast} setPodcast={setPodcast} />
                             <OutlinedBox style={{ marginTop: "12px" }}>
@@ -375,7 +375,7 @@ const Upload = ({ setUploadOpen }) => {
                                             (e) => setPodcast({ ...podcast, category: e.target.value })
                                         }
                                     >
-                                        <Option value={Category[0].name} selected disabled hidden>Select Category</Option>
+                                        <Option value={Category[0].name} selected disabled hidden>Kategoriyani tanlash</Option>
                                         {Category.map((category) => (
                                             <Option value={category.name}>{category.name}</Option>
                                         ))}
@@ -391,7 +391,7 @@ const Upload = ({ setUploadOpen }) => {
                                     !disabled && goToAddEpisodes();
                                 }}
                             >
-                                Next
+                                Keyingi
                             </OutlinedBox>
                         </>
                     ) : (
@@ -410,7 +410,7 @@ const Upload = ({ setUploadOpen }) => {
                                                 {podcast.episodes[index].file.name === undefined ? (
                                                     <div style={{ color: 'green', display: 'flex', gap: '6px', alignItems: 'center', justifyContent: 'center' }}>
                                                         <CloudDoneRounded sx={{ color: 'inherit' }} />
-                                                        File Uploaded Successfully
+                                                        Fayl yuklanishi muvaffaqiyatli
                                                     </div>
                                                 ) : (
                                                     <>
@@ -436,7 +436,7 @@ const Upload = ({ setUploadOpen }) => {
                                     />
                                     <OutlinedBox >
                                         <TextInput
-                                            placeholder="Episode Name*"
+                                            placeholder="Nomlanish turi"
                                             type="text"
                                             value={episode.name}
                                             onChange={(e) => {
@@ -448,7 +448,7 @@ const Upload = ({ setUploadOpen }) => {
                                     </OutlinedBox>
                                     <OutlinedBox style={{ marginTop: "6px" }}>
                                         <Desc
-                                            placeholder="Episode Description* "
+                                            placeholder="Episod Haqida"
                                             name="desc"
                                             rows={5}
                                             value={episode.desc}
@@ -469,7 +469,7 @@ const Upload = ({ setUploadOpen }) => {
                                             })
                                         }
                                     >
-                                        Delete
+                                        O'chirish
                                     </OutlinedBox>
                                 </>
                             ))}
@@ -481,7 +481,7 @@ const Upload = ({ setUploadOpen }) => {
                                     setPodcast({ ...podcast, episodes: [...podcast.episodes, { name: "", desc: "", file: "" }] })
                                 }
                             >
-                                Add Episode
+                                Episod Qo'shish
                             </OutlinedBox>
 
                             <ButtonContainer>
@@ -493,7 +493,7 @@ const Upload = ({ setUploadOpen }) => {
                                         !backDisabled && goToPodcast();
                                     }}
                                 >
-                                    Back
+                                    Orqaga
                                 </OutlinedBox>
                                 <OutlinedBox
                                     button={true}

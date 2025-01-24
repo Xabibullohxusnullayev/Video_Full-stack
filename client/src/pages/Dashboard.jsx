@@ -182,7 +182,7 @@ const Dashboard = ({ setSignInOpen }) => {
             <FilterContainer box={true}>
               <Topic>Your Uploads
                 <Link to={`/profile`} style={{ textDecoration: "none" }}>
-                  <Span>Show All</Span>
+                  <Span>Hammasini</Span>
                 </Link>
               </Topic>
               <Podcasts>
@@ -193,9 +193,9 @@ const Dashboard = ({ setSignInOpen }) => {
             </FilterContainer>
           }
           <FilterContainer>
-            <Topic>Most Popular
+            <Topic>Mashxur videolar to'plami
               <Link to={`/showpodcasts/mostpopular`} style={{ textDecoration: "none" }}>
-                <Span>Show All</Span>
+                <Span>Hammasini</Span>
               </Link>
             </Topic>
             <Podcasts>
@@ -205,9 +205,9 @@ const Dashboard = ({ setSignInOpen }) => {
             </Podcasts>
           </FilterContainer>
           <FilterContainer>
-            <Topic>Comedy
+            <Topic>Node.js
               <Link to={`/showpodcasts/comedy`} style={{ textDecoration: "none" }}>
-                <Span>Show All</Span>
+                <Span>Hammasini</Span>
               </Link>
             </Topic>
             <Podcasts>
@@ -218,8 +218,8 @@ const Dashboard = ({ setSignInOpen }) => {
           </FilterContainer>
           <FilterContainer>
             <Link to={`/showpodcasts/news`} style={{ textDecoration: "none" }}>
-              <Topic>News
-                <Span>Show All</Span>
+              <Topic>Yangiliklar
+                <Span>Hammasini</Span>
               </Topic>
             </Link>
             <Podcasts>
@@ -231,7 +231,7 @@ const Dashboard = ({ setSignInOpen }) => {
           <FilterContainer>
             <Link to={`/showpodcasts/crime`} style={{ textDecoration: "none" }}>
               <Topic>Crime
-                <Span>Show All</Span>
+                <Span>Hammasini</Span>
               </Topic>
             </Link>
             <Podcasts>
@@ -242,8 +242,8 @@ const Dashboard = ({ setSignInOpen }) => {
           </FilterContainer>
           <FilterContainer>
             <Link to={`/showpodcasts/sports`} style={{ textDecoration: "none" }}>
-              <Topic>Sports
-                <Span>Show All</Span>
+              <Topic>Sportlar
+                <Span>Hammasini</Span>
               </Topic>
             </Link>
             <Podcasts>

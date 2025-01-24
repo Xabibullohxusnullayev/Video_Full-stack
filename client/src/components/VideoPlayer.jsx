@@ -186,16 +186,16 @@ const VideoPlayer = ({ episode, podid, currenttime, index }) => {
                         <source src={episode.file} type="video/mp4" />
                         <source src={episode.file} type="video/webm" />
                         <source src={episode.file} type="video/ogg" />
-                        Your browser does not support the video tag.
+                        Brauzeringiz video tegini qo'llab-quvvatlamaydi.
                     </Videoplayer>
                     <EpisodeName>{episode.name}</EpisodeName>
                     <EpisodeDescription>{episode.desc}</EpisodeDescription>
                     <BtnContainer>
                         <Btn onClick={() => goToPreviousPodcast()}>
-                            Previous
+                            Avvalgi
                         </Btn>
                         <Btn onClick={() => goToNextPodcast()}>
-                            Next
+                            Keyingi
                         </Btn>
                     </BtnContainer>
                 </Wrapper>

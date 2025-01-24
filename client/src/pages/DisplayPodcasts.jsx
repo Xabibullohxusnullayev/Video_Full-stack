@@ -128,7 +128,7 @@ const DisplayPodcasts = () => {
                 </Loader>
                  :
                     <Podcasts>
-                        {podcasts.length === 0 && <DisplayNo>No Podcasts</DisplayNo>}
+                        {podcasts.length === 0 && <DisplayNo>Podcast hali yo'q</DisplayNo>}
                         {podcasts.map((podcast) => (
                             <PodcastCard podcast={podcast} />
                         ))}

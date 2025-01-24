@@ -73,7 +73,7 @@ const Navbar = ({  menuOpen, setMenuOpen, setSignInOpen, setSignUpOpen }) => {
       </IcoButton>
       {currentUser ?
         <Welcome>
-          Welcome, {currentUser.name}
+          Salom 👋, {currentUser.name}
         </Welcome>
         :
         <>&nbsp;</>}
